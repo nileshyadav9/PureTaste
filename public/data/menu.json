@@ -1,0 +1,40 @@
+{
+  "weekStart": "2026-09-29",
+  "weekEnd": "2026-10-02",
+  "price": 20,
+  "orderNote": "Text orders at least 24 hours in advance.",
+  "days": [
+    {
+      "day": "Tuesday",
+      "name": "Steak Taco Tuesday",
+      "description": "Three tender steak tacos on warm flour tortillas with sautéed peppers & onions, fresh lime and house sauce.",
+      "sides": ["Mexican-Style Rice", "Seasoned Black Beans"],
+      "image": "",
+      "soldOut": false
+    },
+    {
+      "day": "Wednesday",
+      "name": "Fried Chicken Tenders",
+      "description": "Crispy, golden seasoned chicken tenders.",
+      "sides": ["Creamy Mac & Cheese", "Honey-Glazed Carrots", "Cornbread"],
+      "image": "",
+      "soldOut": false
+    },
+    {
+      "day": "Thursday",
+      "name": "Sofrito Tomato Sirloin Steak",
+      "description": "Tender sirloin simmered in a savory sofrito tomato sauce with peppers & onions.",
+      "sides": ["Garlic Mashed Potatoes", "Seasoned Sweet Corn", "Warm Rustic Bread"],
+      "image": "",
+      "soldOut": false
+    },
+    {
+      "day": "Friday",
+      "name": "Cajun Garlic Butter Chicken",
+      "description": "Tender chicken breast with bold Cajun spices finished in a rich garlic butter sauce.",
+      "sides": ["Seasoned Yellow Rice", "Green Bean Almondine", "House-Made Biscuits"],
+      "image": "",
+      "soldOut": false
+    }
+  ]
+}

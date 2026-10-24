@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#2a221a"/>
+      <stop offset="1" stop-color="#0f0d0a"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#2f2a24"/>
+      <stop offset="1" stop-color="#16130f"/>
+    </radialGradient>
+    <radialGradient id="rice" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#f6d77c"/>
+      <stop offset="1" stop-color="#c99630"/>
+    </radialGradient>
+    <radialGradient id="main" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#c96a35"/>
+      <stop offset="1" stop-color="#7a3214"/>
+    </radialGradient>
+    <radialGradient id="veg" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#7fb04a"/>
+      <stop offset="1" stop-color="#3c6a22"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="318" rx="250" ry="200" fill="#000" opacity=".35"/>
+  <ellipse cx="400" cy="300" rx="250" ry="200" fill="url(#plate)" stroke="#d6a548" stroke-opacity=".35" stroke-width="2"/>
+  <ellipse cx="400" cy="300" rx="196" ry="156" fill="none" stroke="#fbf6e9" stroke-opacity=".06" stroke-width="2"/>
+  <ellipse cx="320" cy="292" rx="96" ry="72" fill="url(#rice)"/>
+  <g fill="#fff4cf" opacity=".5">
+    <ellipse cx="300" cy="270" rx="7" ry="3"/><ellipse cx="330" cy="285" rx="7" ry="3" transform="rotate(30 330 285)"/>
+    <ellipse cx="350" cy="262" rx="7" ry="3" transform="rotate(-20 350 262)"/><ellipse cx="290" cy="305" rx="7" ry="3" transform="rotate(50 290 305)"/>
+  </g>
+  <path d="M420 230c50-18 110-6 126 30 15 36-12 82-62 92-44 9-86-12-92-50-5-30 4-60 28-72Z" fill="url(#main)"/>
+  <path d="M440 262c26-6 52 2 60 18M436 292c30-4 58 6 66 22" stroke="#3d1a0b" stroke-width="6" stroke-linecap="round" fill="none" opacity=".5"/>
+  <g fill="url(#veg)">
+    <ellipse cx="380" cy="372" rx="30" ry="11" transform="rotate(-18 380 372)"/>
+    <ellipse cx="420" cy="384" rx="30" ry="11" transform="rotate(8 420 384)"/>
+    <ellipse cx="458" cy="372" rx="30" ry="11" transform="rotate(28 458 372)"/>
+  </g>
+  <g fill="#e2431e"><circle cx="470" cy="250" r="4"/><circle cx="500" cy="276" r="3"/><circle cx="455" cy="300" r="3"/></g>
+  <g fill="none" stroke="#fbf6e9" stroke-opacity=".22" stroke-width="5" stroke-linecap="round">
+    <path d="M360 170c-18-22 18-34 0-58"/><path d="M400 160c-18-22 18-34 0-58"/><path d="M440 170c-18-22 18-34 0-58"/>
+  </g>
+  <text x="400" y="560" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#d6a548" opacity=".75">Photo coming soon</text>
+</svg>

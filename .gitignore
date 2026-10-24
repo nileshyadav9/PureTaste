@@ -1,0 +1,17 @@
+# secrets and local config: never commit
+.env
+.env.*
+.dev.vars
+*.pem
+*.key
+secrets*
+
+# tooling / OS noise
+node_modules/
+.wrangler/
+.claude/settings.local.json
+Thumbs.db
+.DS_Store
+
+# raw source photos before they're optimised into public/assets/img/menu
+public/assets/source/

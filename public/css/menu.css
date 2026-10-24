@@ -1,0 +1,132 @@
+/* This Week's Menu — modelled on Chef David's weekly poster */
+
+.menu-hero {
+  padding: calc(var(--header-h) + clamp(40px, 7vw, 88px)) 0 clamp(20px, 3vw, 32px);
+  background:
+    radial-gradient(55% 90% at 85% 0%, rgba(240, 100, 42, 0.18), transparent 60%),
+    radial-gradient(45% 70% at 5% 20%, rgba(214, 165, 72, 0.1), transparent 60%),
+    var(--ink);
+}
+.menu-hero-grid {
+  display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: end;
+}
+.menu-tagline { font-size: clamp(1.7rem, 3.6vw, 2.4rem); margin-bottom: 6px; }
+.menu-hero h1 { margin-bottom: 12px; }
+.menu-hero .lead { margin-bottom: 0; }
+
+.week-card {
+  display: grid; justify-items: center; text-align: center; gap: 4px;
+  padding: 18px 26px;
+  border: 1px solid var(--gold); border-radius: var(--radius-sm);
+  background: linear-gradient(180deg, rgba(214, 165, 72, 0.1), rgba(214, 165, 72, 0.02));
+  min-width: 240px;
+}
+.week-label { font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); font-weight: 650; }
+.week-dates { font-family: var(--f-display); font-weight: 700; font-size: 1.5rem; color: var(--cream); line-height: 1.15; }
+.week-price { color: var(--cream-dim); font-size: 0.95rem; }
+.week-price strong { color: var(--gold-hi); font-family: var(--f-display); font-size: 1.25rem; }
+
+.fresh {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin: 28px 0 0; color: var(--cream-dim); letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.8rem; font-weight: 600;
+}
+.fresh .icon { color: var(--gold); width: 16px; height: 16px; }
+
+@media (max-width: 720px) {
+  .menu-hero-grid { grid-template-columns: 1fr; }
+  .week-card { justify-self: stretch; }
+}
+
+/* ---------- dishes ---------- */
+.menu-body { padding-block: clamp(24px, 4vw, 40px) clamp(40px, 6vw, 64px); }
+
+.menu-notice {
+  margin-bottom: 24px; padding: 14px 18px;
+  border: 1px solid var(--line); border-left: 3px solid var(--flame-hi); border-radius: var(--radius-sm);
+  background: var(--char); color: var(--cream-dim);
+}
+.menu-notice strong { color: var(--cream); }
+
+.menu-grid {
+  display: grid; gap: clamp(14px, 1.6vw, 22px);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+@media (max-width: 1100px) { .menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .menu-grid { grid-template-columns: 1fr; } }
+
+.dish {
+  position: relative;
+  display: flex; flex-direction: column;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--char-2), var(--char));
+  border: 1px solid var(--line-soft);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.dish-body { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 18px 18px; flex: 1; }
+
+.dish-day {
+  position: relative; margin: 18px auto 16px;
+  padding: 7px 26px;
+  font-family: var(--f-display); font-weight: 800; font-size: 0.95rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(180deg, #d9441f, #a92912);
+  clip-path: polygon(0 0, 100% 0, 94% 50%, 100% 100%, 0 100%, 6% 50%);
+}
+.dish-name { font-size: clamp(1.35rem, 1.8vw, 1.6rem); margin-bottom: 10px; color: var(--cream); }
+.dish-desc { color: var(--cream-dim); font-size: 0.96rem; margin-bottom: 14px; }
+.dish-rule { width: 56px; height: 2px; border: 0; background: var(--flame); margin: 0 auto 14px; }
+.dish-sides { list-style: none; padding: 0; margin: 0 0 18px; display: grid; gap: 3px; color: var(--gold-hi); font-weight: 600; font-size: 0.95rem; }
+.dish-photo { margin: 0; aspect-ratio: 4 / 3; background: var(--char-3); overflow: hidden; }
+.dish-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.dish:hover .dish-photo img { transform: scale(1.04); }
+.dish-order { margin-top: auto; width: 100%; min-height: 44px; font-size: 0.92rem; }
+
+.dish.is-sold-out .dish-photo img { filter: grayscale(1) brightness(0.55); }
+.dish.is-sold-out .dish-order { pointer-events: none; opacity: 0.45; }
+.sold-badge {
+  position: absolute; top: 14px; right: -38px; z-index: 2;
+  transform: rotate(35deg);
+  padding: 6px 44px;
+  background: var(--cream); color: var(--ink);
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase;
+}
+
+/* Poster order on wide screens: text first, photo at the bottom. On phones the photo leads. */
+@media (max-width: 640px) {
+  .dish { display: grid; grid-template-areas: "photo" "body"; }
+  .dish-photo { grid-area: photo; aspect-ratio: 16 / 10; }
+  .dish-body { grid-area: body; }
+  .dish-day { margin-top: -18px; z-index: 1; }
+}
+
+.menu-error { grid-column: 1 / -1; color: var(--cream-dim); }
+
+/* skeleton while loading */
+.dish-skeleton { min-height: 520px; background: linear-gradient(100deg, var(--char) 30%, var(--char-2) 50%, var(--char) 70%); background-size: 300% 100%; animation: shimmer 1.6s linear infinite; border-radius: var(--radius); }
+@keyframes shimmer { to { background-position: -150% 0; } }
+
+/* ---------- order strip ---------- */
+.order-strip { padding-bottom: clamp(40px, 6vw, 72px); }
+.order-inner {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center;
+  padding: clamp(20px, 3vw, 32px);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(80% 140% at 0% 0%, rgba(240, 100, 42, 0.14), transparent 60%),
+    var(--char);
+}
+.order-phone { display: flex; align-items: center; gap: 16px; }
+.order-icon { width: 46px; height: 46px; color: var(--gold); flex: none; }
+.order-phone > div { display: grid; line-height: 1.2; }
+.order-kicker { font-size: 0.78rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--cream-dim); font-weight: 650; }
+.order-number { font-family: var(--f-display); font-weight: 800; font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--cream); }
+.order-sub { font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 650; }
+.order-facts { list-style: none; margin: 0; padding: 0 0 0 28px; border-left: 1px solid var(--line-soft); display: grid; gap: 8px; color: var(--cream-dim); font-size: 0.95rem; }
+.order-facts li { display: flex; align-items: center; gap: 10px; }
+.order-facts .icon { color: var(--gold); width: 18px; height: 18px; }
+@media (max-width: 980px) {
+  .order-inner { grid-template-columns: 1fr; }
+  .order-facts { padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--line-soft); }
+}

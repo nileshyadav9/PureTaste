@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pure Taste by Chef David | Personal Chef, Weekly Meals &amp; Catering in Land O' Lakes &amp; Lutz, FL</title>
+  <meta name="description" content="Chef David cooks scratch-made weekly meals, private chef dinners and catering in Land O' Lakes and Lutz, Florida. See this week's menu and text your order.">
+  <meta name="theme-color" content="#0d0b09">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pure Taste by Chef David">
+  <meta property="og:title" content="Pure Taste by Chef David">
+  <meta property="og:description" content="Personal chef, customized weekly meals &amp; catering in Land O' Lakes and Lutz, FL. Faith, Flavor, and Fire.">
+  <meta property="og:image" content="assets/logo/og-image.png">
+  <link rel="icon" href="assets/logo/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/great-vibes-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script>
+    // Decide before first paint whether the 3D story runs, so the layout never jumps.
+    (function () {
+      var d = document.documentElement, gl = false;
+      try { gl = !!document.createElement('canvas').getContext('webgl2'); } catch (e) {}
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var lowMem = navigator.deviceMemory && navigator.deviceMemory < 2;
+      var saveData = navigator.connection && navigator.connection.saveData;
+      d.classList.add(gl && !reduce && !lowMem && !saveData ? 'has-3d' : 'no-3d');
+    })();
+  </script>
+  <script type="importmap">
+    { "imports": { "three": "./js/vendor/three/three.module.js", "three/addons/": "./js/vendor/three/addons/" } }
+  </script>
+  <script type="module" src="js/site.js"></script>
+  <script type="module" src="js/home/story.js"></script>
+  <script type="module" src="js/home/home.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "Pure Taste by Chef David",
+      "description": "Personal chef, customized weekly meals and catering.",
+      "telephone": "+1-813-498-9199",
+      "image": "assets/logo/logo-full.webp",
+      "servesCuisine": ["American", "Latin", "Comfort food"],
+      "priceRange": "$",
+      "areaServed": [
+        { "@type": "City", "name": "Land O' Lakes, FL" },
+        { "@type": "City", "name": "Lutz, FL" }
+      ],
+      "address": { "@type": "PostalAddress", "addressLocality": "Land O' Lakes", "addressRegion": "FL", "addressCountry": "US" },
+      "sameAs": ["https://www.facebook.com/profile.php?id=61594036238337"]
+    }
+  </script>
+</head>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Pure Taste by Chef David, home">
+        <img src="assets/logo/logo-mark.png" alt="" width="46" height="40">
+        <span class="brand-text"><span class="brand-name">Pure Taste</span><span class="brand-by">by Chef David</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="catering.html">Catering</a>
+        <a class="nav-menu" href="menu.html">This Week's Menu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Scroll story: a 3D scene pinned behind captions. Without WebGL it becomes a static hero + stacked chapters. -->
+    <section class="story" data-story aria-label="From prep to plate">
+      <div class="story-pin">
+        <div class="story-backdrop" aria-hidden="true">
+          <img class="backdrop-mark" src="assets/logo/logo-mark.png" alt="" width="480" height="421">
+          <span class="ember e1"></span><span class="ember e2"></span><span class="ember e3"></span><span class="ember e4"></span><span class="ember e5"></span><span class="ember e6"></span>
+        </div>
+        <canvas class="story-canvas" aria-hidden="true"></canvas>
+        <div class="story-scrim" aria-hidden="true"></div>
+
+        <div class="story-captions">
+          <div class="cap cap--hero" data-cap data-from="0" data-to="0.085">
+            <p class="script cap-script">Faith, Flavor, and Fire</p>
+            <h1><span class="h1-main">Pure Taste</span><span class="h1-by">by Chef David</span></h1>
+            <p class="lead">Personal chef, customized weekly meals &amp; catering in Land O' Lakes and Lutz, Florida.</p>
+            <div class="btn-row">
+              <a class="btn btn-gold" href="menu.html"><svg aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg> This Week's Menu</a>
+              <a class="btn btn-ghost" href="sms:+18134989199"><svg aria-hidden="true"><use href="assets/icons.svg#i-chat"/></svg> Text to Order</a>
+            </div>
+          </div>
+
+          <div class="cap" data-cap data-from="0.095" data-to="0.155">
+            <span class="cap-num">01 · Fresh</span>
+            <h2>Real ingredients, chosen with care</h2>
+            <p>Ripe tomatoes, sweet peppers, red onion, garlic and fresh herbs. Everything starts from scratch.</p>
+          </div>
+
+          <div class="cap" data-cap data-from="0.165" data-to="0.39">
+            <span class="cap-num">02 · Prep</span>
+            <h2>Prepped by hand</h2>
+            <p>More than three decades of knife work, from restaurants and hotels to leading a professional kitchen as an Executive Chef.</p>
+          </div>
+
+          <div class="cap" data-cap data-from="0.405" data-to="0.615">
+            <span class="cap-num">03 · Fire</span>
+            <h2>Cooked with fire</h2>
+            <p>Bold flavor built with time and attention: sofrito, Cajun spice, garlic butter. Food with soul.</p>
+          </div>
+
+          <div class="cap" data-cap data-from="0.63" data-to="0.82">
+            <span class="cap-num">04 · Plate</span>
+            <h2>Plated for your week</h2>
+            <p>Imagine opening your refrigerator to flavorful meals already prepared around your preferences and your goals.</p>
+          </div>
+
+          <div class="cap cap--final" data-cap data-from="0.87" data-to="1.01">
+            <p class="script cap-final-script">Blessed to Cook, Grateful to Serve</p>
+            <p class="cap-final-sub">Great food is more than a meal. It's a way to bless people.</p>
+            <div class="btn-row">
+              <a class="btn btn-gold" href="menu.html"><svg aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg> See This Week's Menu</a>
+              <a class="btn btn-ghost" href="catering.html"><svg aria-hidden="true"><use href="assets/icons.svg#i-calendar"/></svg> Book Catering</a>
+            </div>
+          </div>
+        </div>
+
+        <ol class="story-steps" aria-hidden="true">
+          <li data-step="0.095">Fresh</li>
+          <li data-step="0.165">Prep</li>
+          <li data-step="0.405">Fire</li>
+          <li data-step="0.63">Plate</li>
+          <li data-step="0.87">Served</li>
+        </ol>
+        <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><svg><use href="assets/icons.svg#i-down"/></svg></div>
+      </div>
+    </section>
+
+    <!-- This week teaser, filled from data/menu.json -->
+    <section class="section this-week" id="this-week">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">On the menu</p>
+            <h2>This week's meals</h2>
+            <p class="lead">Week of <strong data-week>…</strong> · <strong data-price>$20</strong> per meal · Text orders 24 hours ahead.</p>
+          </div>
+          <a class="btn btn-gold" href="menu.html">Full menu <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
+        </div>
+        <div class="week-strip" data-week-strip></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="services">
+      <div class="wrap">
+        <div class="center">
+          <p class="eyebrow">Services</p>
+          <h2>Food tailored to your table</h2>
+          <p class="lead">Delicious food made around your tastes and your goals, from one week of meals to your biggest celebration.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service reveal">
+            <svg class="service-icon" aria-hidden="true"><use href="assets/icons.svg#i-box"/></svg>
+            <h3>Weekly Meal Prep</h3>
+            <p>A new menu every week, Tuesday to Friday. $20 a meal, scratch made and ready to heat and enjoy.</p>
+            <a href="menu.html">This week's menu <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </article>
+          <article class="service reveal">
+            <svg class="service-icon" aria-hidden="true"><use href="assets/icons.svg#i-chef"/></svg>
+            <h3>Private Chef</h3>
+            <p>Customized weekly meals built around your preferences, dietary needs and goals, so eating well is the easy choice.</p>
+            <a href="catering.html#inquiry">Ask about private chef <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </article>
+          <article class="service reveal">
+            <svg class="service-icon" aria-hidden="true"><use href="assets/icons.svg#i-users"/></svg>
+            <h3>Catering</h3>
+            <p>Birthdays, church gatherings, family celebrations and office lunches, with a menu planned with you.</p>
+            <a href="catering.html">Plan your event <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="wrap center">
+        <svg class="quote-cross" aria-hidden="true"><use href="assets/icons.svg#i-cross"/></svg>
+        <blockquote class="reveal">
+          <p>Using the freshest ingredients, with care, time and attention to detail, because great food is more than a meal. <span>It's a way to bless people.</span></p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <figure class="about-badge reveal">
+          <img src="assets/logo/logo-full.webp" alt="Pure Taste by Chef David logo: crossed chef's knives beneath a flame" width="1024" height="1024" loading="lazy">
+        </figure>
+        <div class="reveal">
+          <p class="eyebrow">Meet Chef David</p>
+          <h2>Cooking since he was eight</h2>
+          <p class="lead">Chef David started cooking at 8 years old and stepped into his first professional kitchen at 16.</p>
+          <p>More than three decades later, his journey has taken him through restaurants, hotels, catering and healthcare, and on to leading a professional kitchen as an Executive Chef. Along the way he has won culinary competitions and led live cooking demonstrations, sharing techniques and connecting with people over food.</p>
+          <p>Today he brings that experience to your table with personal chef service, customized weekly meals and catering.</p>
+          <ul class="pillars">
+            <li><strong>Faith</strong><span>Every plate is an act of gratitude and service.</span></li>
+            <li><strong>Flavor</strong><span>Bold, scratch-made food with real ingredients.</span></li>
+            <li><strong>Fire</strong><span>30+ years of passion in professional kitchens.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="how">
+      <div class="wrap">
+        <div class="center">
+          <p class="eyebrow">Ordering</p>
+          <h2>How weekly meals work</h2>
+        </div>
+        <ol class="how-steps">
+          <li class="reveal"><svg aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg><h3>Check the menu</h3><p>A new menu goes up every week, Tuesday to Friday.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="assets/icons.svg#i-chat"/></svg><h3>Text your order</h3><p>Text (813) 498-9199 at least 24 hours in advance.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="assets/icons.svg#i-truck"/></svg><h3>Pickup or delivery</h3><p>Pickup, or delivery for select areas.</p></li>
+          <li class="reveal"><svg aria-hidden="true"><use href="assets/icons.svg#i-flame"/></svg><h3>Heat &amp; enjoy</h3><p>Flavorful meals, ready when you are.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="wrap center">
+        <p class="script cta-script">Let's cook for you</p>
+        <h2>Serving Land O' Lakes, Lutz &amp; nearby</h2>
+        <p class="lead">Questions, orders or an event coming up? Send Chef David a text.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="sms:+18134989199"><svg aria-hidden="true"><use href="assets/icons.svg#i-chat"/></svg> Text (813) 498-9199</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/profile.php?id=61594036238337" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/icons.svg#i-fb"/></svg> Follow on Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="./"><img src="assets/logo/logo-mark.png" alt="" width="46" height="40"><span class="brand-text"><span class="brand-name">Pure Taste</span><span class="brand-by">by Chef David</span></span></a>
+          <p>Personal chef, customized weekly meals &amp; catering. Delicious food tailored to your tastes and goals.</p>
+          <span class="footer-tag">Faith, Flavor, and Fire</span>
+        </div>
+        <div>
+          <h4>Order</h4>
+          <ul>
+            <li><a href="sms:+18134989199">Text (813) 498-9199</a></li>
+            <li><a href="tel:+18134989199">Call (813) 498-9199</a></li>
+            <li><a href="menu.html">This Week's Menu</a></li>
+            <li><a href="catering.html">Catering inquiry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Find us</h4>
+          <ul>
+            <li>Land O' Lakes / Lutz, FL</li>
+            <li>Pickup &amp; delivery for select areas</li>
+            <li><a href="https://www.facebook.com/profile.php?id=61594036238337" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Pure Taste by Chef David</span>
+        <span>Blessed to Cook, Grateful to Serve.</span>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="action-bar" aria-label="Quick actions">
+    <a href="sms:+18134989199"><svg aria-hidden="true"><use href="assets/icons.svg#i-chat"/></svg>Text</a>
+    <a href="tel:+18134989199"><svg aria-hidden="true"><use href="assets/icons.svg#i-phone"/></svg>Call</a>
+    <a class="ab-menu" href="menu.html"><svg aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg>Menu</a>
+  </nav>
+</body>
+</html>
